@@ -1,5 +1,5 @@
 import React from 'react';
-import paper from './assets/images/whitepaper.png';
+import paper from '../assets/images/whitepaper.png';
 
 const WhitePaper = () => {
   return (

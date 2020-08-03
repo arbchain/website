@@ -1,5 +1,5 @@
 import React from 'react';
-import judge from './assets/images/judge.png';
+import judge from '../assets/images/judge.png';
 const ProblemStatement = () => {
   return (
     <section className='text-gray-700 body-font bg-gray-100'>

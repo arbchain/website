@@ -1,5 +1,5 @@
 import React from 'react';
-import play from './assets/images/play.png';
+import play from '../assets/images/play.png';
 const Architeture = () => {
   return (
     <section className='text-gray-700 body-font bg-gray-100'>

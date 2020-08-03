@@ -1,5 +1,5 @@
 import React from 'react';
-import Tech from './assets/images/Tech.svg';
+import Tech from '../assets/images/Tech.svg';
 
 function Technology() {
   return (
