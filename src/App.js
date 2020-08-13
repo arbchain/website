@@ -2,13 +2,15 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemStatement from './components/ProblemStatement';
-import Architeture from './components/Architeture';
-import RequestDemo from './components/RequestDemo';
-import WhitePaper from './components/WhitePaper';
-import Footer from './components/Footer';
+import Architeture from './components/architeture/Architeture';
 
-import Technology from './components/TechStack';
+import Teams from './components/teams/Teams';
+import Footer from './components/Footer';
+import ContactForm from './components/ContactForm';
+// import Resources from './components/Resources';
 import Description from './components/Description';
+import Faq from './components/Faqs/Faq';
+
 export default function App() {
   return (
     <>
@@ -17,9 +19,10 @@ export default function App() {
       <ProblemStatement />
       <Description />
       <Architeture />
-      <Technology />
-      <RequestDemo />
-      <WhitePaper />
+      <Teams />
+      <Faq />
+      {/* <Resources /> */}
+      <ContactForm />
       <Footer />
     </>
   );
