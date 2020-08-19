@@ -1,13 +1,13 @@
 import React from 'react';
 //import { Link as extLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import './Navbar.style.css';
 import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
   return (
     <>
-      <header className=' text-gray-700 font-body bg-secondary-blue '>
+      <header className=' text-gray-700 font-body bg-secondary-blue sm:display-none mob'>
         <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center  '>
           <Link
             to='/'

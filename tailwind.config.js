@@ -9,7 +9,7 @@ module.exports = {
         'text-light': '#737B7D',
       },
       fontFamily: {
-        body: ['Josefin Sans'],
+        body: ['Josefin Sans', 'Arial', 'sans-serif'],
       },
       fontWeight: {
         light: 300,
