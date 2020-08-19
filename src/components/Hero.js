@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className=' font-body bg-secondary-blue h-screen'>
+    <section className=' font-body bg-secondary-blue md:h-screen lg:h-full'>
       <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col'>
-        <div className='text-center lg:w-2/3 w-full '>
+        <div className='text-center lg:w-2/3 w-full items-center '>
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
             Unleashing the Power of Blockchain in the Arbitration
           </h1>
@@ -16,11 +17,14 @@ const Hero = () => {
             several arbitration procedures and enforce arbitral awards.
           </p>
           <div className='flex justify-center'>
-            <button className='inline-flex items-center bg-primary-yellow border-0 py-2 px-3 focus:outline-none hover:bg-gray-300 rounded text-gray-700 font-medium mt-4 md:mt-0'>
+            <Link
+              to='/contact'
+              className='inline-flex items-center bg-primary-yellow border-0 py-2 px-3 focus:outline-none hover:bg-gray-300 rounded text-gray-700 font-medium mt-4 md:mt-0'
+            >
               Request Demo
-            </button>
+            </Link>
             <button className='ml-4 inline-flex text-white font-medium bg-transparent hover:bg-blue-500  border-2 py-2 px-6 focus:outline-bg-indigo-900 hover:bg-gray-300 rounded text-lg'>
-              Watch Video
+              Learn more
             </button>
           </div>
         </div>

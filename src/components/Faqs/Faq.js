@@ -53,7 +53,7 @@ function Faq() {
   return (
     <div className='App'>
       <div className='container px-5 py-24 mx-auto'>
-        <h1 className='sm:text-3xl text-2xl font-medium text-center title-font mb-0 text-gray-900'>
+        <h1 className='sm:text-3xl text-2xl font-medium text-center title-font font-body mb-0 text-gray-900'>
           Frequently asked Questions
         </h1>
 
