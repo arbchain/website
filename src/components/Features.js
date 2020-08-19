@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Description() {
+function Features() {
   return (
     <>
       <section
         className='bg-primary text-gray-900 font-body bg-secondary-blue '
-        id='description'
+        id='features'
       >
         <div className='container px-5 py-24 mx-auto'>
           <div className='flex flex-col text-center w-full mb-20 '>
@@ -121,4 +121,4 @@ function Description() {
   );
 }
 
-export default Description;
+export default Features;

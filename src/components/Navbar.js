@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link as extLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import './Navbar.style.css';
+
 import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='#why'
+              to='/#why'
               spy={true}
               smooth={true}
               offset={-70}
@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='#architeture'
+              to='/#architeture'
               spy={true}
               smooth={true}
               offset={-70}
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='#description'
+              to='/#features'
               spy={true}
               smooth={true}
               offset={-70}
