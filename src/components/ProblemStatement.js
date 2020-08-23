@@ -12,7 +12,7 @@ const ProblemStatement = () => {
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
             Why Arbchain?
           </h1>
-          <p className='mb-8 leading-relaxed'>
+          <p className='mb-8 leading-relaxed sm:text-left '>
             Even though arbitration procedures are an alternative dispute
             resolution solutions, they them selves are time consuming, costly
             and at times inefficient. In addition to this, arbitration is a
@@ -26,7 +26,7 @@ const ProblemStatement = () => {
           </p>
           <div className='flex justify-center'></div>
         </div>
-        <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+        <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mob'>
           <img src={problem} alt='problem' srcset='' />
         </div>
       </div>

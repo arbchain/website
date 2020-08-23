@@ -6218,7 +6218,7 @@ video {
 }
 
 .font-body{
-  font-family: Josefin Sans;
+  font-family: Josefin Sans, Arial, sans-serif;
 }
 
 .font-hairline{
@@ -20400,7 +20400,7 @@ video {
   }
 
   .sm\:font-body{
-    font-family: Josefin Sans;
+    font-family: Josefin Sans, Arial, sans-serif;
   }
 
   .sm\:font-hairline{
@@ -34539,7 +34539,7 @@ video {
   }
 
   .md\:font-body{
-    font-family: Josefin Sans;
+    font-family: Josefin Sans, Arial, sans-serif;
   }
 
   .md\:font-hairline{
@@ -48678,7 +48678,7 @@ video {
   }
 
   .lg\:font-body{
-    font-family: Josefin Sans;
+    font-family: Josefin Sans, Arial, sans-serif;
   }
 
   .lg\:font-hairline{
@@ -62817,7 +62817,7 @@ video {
   }
 
   .xl\:font-body{
-    font-family: Josefin Sans;
+    font-family: Josefin Sans, Arial, sans-serif;
   }
 
   .xl\:font-hairline{

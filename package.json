@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "autoprefixer": "^9.8.5",
+    "jump.js": "^1.0.2",
     "postcss-cli": "^7.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -15,6 +18,8 @@
     "react-router-hash-link": "^2.0.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.1",
+    "react-spring": "^8.0.27",
+    "sal.js": "^0.7.7",
     "tailwindcss": "^1.6.0"
   },
   "scripts": {

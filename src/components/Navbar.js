@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import { Link as extLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import '../css/customStyle.css';
 import logo from '../assets/images/logo.png';
+import NavMenu from './Navmenu';
+import { useTransition, animated } from 'react-spring';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const Navbar = (pros) => {
+  const [showMenu, setShowMenu] = useState(false);
+  const transitions = useTransition(showMenu, null, {
+    from: { position: 'absolute', opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  });
   return (
     <>
-      <header className=' text-gray-700 font-body bg-secondary-blue sm:display-none mob'>
-        <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center  '>
+      <header className='sticky text-gray-700 font-body bg-secondary-blue sm:display-none  mob'>
+        <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center sticky'>
           <Link
             to='/'
             className='flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0'
@@ -19,7 +29,7 @@ const Navbar = () => {
           <nav className='md:ml-auto md:mr-auto flex flex-wrap items-center text-white justify-center   '>
             <Link
               to='/about'
-              className='mr-5 hover:text-gray-900 cursor-pointer'
+              className='mr-5 hover:text-gray-900 cursor-pointer '
             >
               About
             </Link>
@@ -85,13 +95,16 @@ const Navbar = () => {
           </Link>
         </div>
       </header>
-      <nav class='flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden '>
+      {/* mob */}
+      {/* <nav className='mobile-toggle flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden '>
         <a href='#' class='p-2 mr-4 inline-flex items-center'>
           <img src={logo} alt='Logo' srcset='' />
         </a>
+
         <button
-          class='text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler'
+          className='text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler'
           data-target='#navigation'
+          onClick={() => setShowMenu(false)}
         >
           <svg
             class='w-6 h-6'
@@ -106,10 +119,10 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          class='hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto'
+          className='hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto'
           id='navigation'
         >
-          <nav className='md:ml-auto md:mr-auto flex flex-wrap items-center text-white justify-center   '>
+          <nav className='md:ml-auto md:mr-auto flex flex-wrap items-center text-white justify-center sticky  '>
             <Link
               to='/about'
               className='mr-5 hover:text-gray-900 cursor-pointer'
@@ -177,7 +190,44 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
+      </nav> */}
+      <nav>
+        <span className='text-xl'>
+          <FontAwesomeIcon
+            icon={faBars}
+            onClick={() => setShowMenu(!showMenu)}
+          />
+        </span>
+        {transitions.map(
+          ({ item, key, props }) =>
+            item && (
+              <animated.div
+                key={key}
+                s
+                tyle={props}
+                className='bg-black-t-50 fixed top-0 left-0 w-full h-full z-50'
+                onClick={() => setShowMenu(false)}
+              ></animated.div>
+            )
+        )}
+
+        {transitions.map(
+          ({ item, key, props }) =>
+            item && (
+              <animated.div
+                key={key}
+                s
+                tyle={props}
+                className='fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow'
+              >
+                <span className='font-bold'>The Menu</span>
+
+                <NavMenu closeMenu={() => setShowMenu(false)} />
+              </animated.div>
+            )
+        )}
       </nav>
+      ); };
     </>
   );
 };

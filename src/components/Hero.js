@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../css/customStyle.css';
 const Hero = () => {
   return (
     <section className=' font-body bg-secondary-blue md:h-screen lg:h-full'>
@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
             Unleashing the Power of Blockchain in the Arbitration
           </h1>
-          <p className='mb-8 text-white font-light '>
+          <p className='mb-8 text-white font-light mob '>
             DLT based platform that brings all the benefits of the
             decentralization to solve inefficiencies in the arbitration by
             providing authentic, privacy preserved dispute resolution with a
@@ -23,9 +23,9 @@ const Hero = () => {
             >
               Request Demo
             </Link>
-            <button className='ml-4 inline-flex text-white font-medium bg-transparent hover:bg-blue-500  border-2 py-2 px-6 focus:outline-bg-indigo-900 hover:bg-gray-300 rounded text-lg'>
+            <Link className='ml-4 inline-flex text-white font-medium bg-transparent hover:bg-blue-500  border-2 py-2 px-6 focus:outline-bg-indigo-900 hover:bg-gray-300 rounded text-lg'>
               Learn more
-            </button>
+            </Link>
           </div>
         </div>
       </div>
