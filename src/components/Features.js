@@ -5,6 +5,8 @@ import Law from '../assets/images/icons/law.svg';
 import Speed from '../assets/images/icons/speed.svg';
 import Confidential from '../assets/images/icons/confidential.svg';
 
+import '../css/customStyle.css';
+
 function Features() {
   return (
     <>
@@ -26,7 +28,7 @@ function Features() {
           </div>
           <div className='flex flex-wrap -m-4 '>
             <div className='p-4 md:w-1/3 '>
-              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden'>
+              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Configurable}
@@ -45,7 +47,7 @@ function Features() {
             </div>
 
             <div className='p-4 md:w-1/3 '>
-              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden'>
+              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Speed}
@@ -63,7 +65,7 @@ function Features() {
             </div>
 
             <div className='p-4 md:w-1/3 '>
-              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden'>
+              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Law}
@@ -83,7 +85,7 @@ function Features() {
             </div>
 
             <div className='p-4 md:w-1/3 '>
-              <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden'>
+              <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Confidential}
@@ -102,12 +104,8 @@ function Features() {
               </div>
             </div>
 
-            <div
-              className='p-4 md:w-1/3 onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-        onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.interpolate(trans) }} '
-            >
-              <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden'>
+            <div className='p-4 md:w-1/3 '>
+              <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Rewards}

@@ -14,6 +14,12 @@ header {
   margin-top: 0.2em;
 }
 
+.div-hover::hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 2px #000;
+  transition: 0.1s;
+}
+
 @media only screen and (max-width: 600px) {
   .mob {
     display: none;

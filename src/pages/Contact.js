@@ -134,7 +134,11 @@ class ContactForm extends React.Component {
                       Submit
                     </button>
                   )}
-                  {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+                  {status === 'ERROR' && (
+                    <p className='text-primary-yellow'>
+                      Ooops! There was an error.
+                    </p>
+                  )}
                 </div>
               </form>
             </div>
