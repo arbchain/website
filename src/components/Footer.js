@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/customStyle.css';
+// import '../css/customStyle.css';
 const Footer = () => {
   return (
     <footer className='text-gray-700 body-font bg-gray-900'>

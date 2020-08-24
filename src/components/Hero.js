@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../css/customStyle.css';
 const Hero = () => {
   return (
-    <section className=' font-body bg-secondary-blue md:h-screen lg:h-full'>
-      <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col'>
+    <section className=' font-body bg-secondary-blue md:h-screen lg:h-full mobile-container '>
+      <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col inner-container'>
         <div className='text-center lg:w-2/3 w-full items-center '>
           <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
             Unleashing the Power of Blockchain in the Arbitration
@@ -18,13 +18,16 @@ const Hero = () => {
           </p>
           <div className='flex justify-center'>
             <Link
-              to='/contact'
+              to='/#features'
               className='inline-flex items-center bg-primary-yellow border-0 py-2 px-3 focus:outline-none hover:bg-gray-300 rounded text-gray-700 font-medium mt-4 md:mt-0'
             >
-              Request Demo
-            </Link>
-            <Link className='ml-4 inline-flex text-white font-medium bg-transparent hover:bg-blue-500  border-2 py-2 px-6 focus:outline-bg-indigo-900 hover:bg-gray-300 rounded text-lg'>
               Learn more
+            </Link>
+            <Link
+              to='/contact'
+              className='inline-flex ml-4 items-center bg-transparent border-2 py-2 px-3 focus:outline-none hover:bg-gray-900 rounded text-white font-medium mt-4 md:mt-0'
+            >
+              Request Demo
             </Link>
           </div>
         </div>
@@ -34,3 +37,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+//

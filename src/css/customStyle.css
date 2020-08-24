@@ -3,6 +3,10 @@ header {
   top: 0;
 }
 
+.btn-secondary {
+  display: none;
+}
+
 .mobile-toggle {
   position: fixed;
   top: 0;
@@ -21,5 +25,15 @@ header {
   header {
     position: fixed;
     top: 0;
+  }
+  /* .btn-secondary {
+    display: none !important;
+  } */
+  .mobile-container {
+    height: 80vh;
+    display: flex;
+  }
+  h1 {
+    font-size: 1.6em !important;
   }
 }

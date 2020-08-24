@@ -24,9 +24,9 @@ function Features() {
               better execution of the procedures.
             </p>
           </div>
-          <div className='flex flex-wrap -m-4'>
-            <div className='p-4 md:w-1/3 rounded-lg '>
-              <div className='h-full shadow-xl border-gray-200  rounded-lg overflow-hidden'>
+          <div className='flex flex-wrap -m-4 '>
+            <div className='p-4 md:w-1/3 '>
+              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
                   src={Configurable}
@@ -39,26 +39,6 @@ function Features() {
                   <p className='leading-relaxed mb-3 text-center font-light'>
                     Commercial arbitration rules such as those of the LCIA, AAA
                     or any other can be adapted based on the requirement.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className='p-4 md:w-1/3'>
-              <div className='h-full shadow-xl border-gray-200  rounded-lg overflow-hidden'>
-                <img
-                  className='lg:h-48 md:h-36 w-full object-cover object-center'
-                  src={Law}
-                  alt='blog'
-                />
-                <div className='bg-white p-6'>
-                  <h1 className='title-font text-lg font-medium text-gray-900 mb-3 text-center'>
-                    Choice of the Tribunal
-                  </h1>
-                  <p className='leading-relaxed mb-3 text-center font-light'>
-                    Tribunal can be appointed by association or by the parties
-                    with greater transparency for a satisfactory arbitration
-                    procedure
                   </p>
                 </div>
               </div>
@@ -81,6 +61,27 @@ function Features() {
                 </div>
               </div>
             </div>
+
+            <div className='p-4 md:w-1/3 '>
+              <div className='h-full bg-white shadow-xl border-gray-200 rounded-lg overflow-hidden'>
+                <img
+                  className='lg:h-48 md:h-36 w-full object-cover object-center'
+                  src={Law}
+                  alt='blog'
+                />
+                <div className='bg-white p-6'>
+                  <h1 className='title-font text-lg font-medium text-gray-900 mb-3 text-center'>
+                    Choice of the Tribunal
+                  </h1>
+                  <p className='leading-relaxed mb-3 text-center font-light'>
+                    Tribunal can be appointed by association or by the parties
+                    with greater transparency for a satisfactory arbitration
+                    procedure
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className='p-4 md:w-1/3 '>
               <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden'>
                 <img
