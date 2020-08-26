@@ -1,0 +1,45 @@
+header {
+  position: fixed;
+  top: 0;
+}
+
+.btn-secondary {
+  display: none;
+}
+
+.mobile-toggle {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0.2em;
+}
+
+.div-hover::hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 2px #000;
+  transition: 0.1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob {
+    display: none;
+  }
+  p {
+    text-align: justify;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+  }
+  /* .btn-secondary {
+    display: none !important;
+  } */
+  .mobile-container {
+    height: 80vh;
+    display: flex;
+  }
+  h1 {
+    font-size: 1.6em !important;
+  }
+}
