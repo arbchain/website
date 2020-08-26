@@ -1,6 +1,7 @@
 header {
   position: fixed;
   top: 0;
+  z-index: 200;
 }
 
 .btn-secondary {
@@ -31,9 +32,11 @@ header {
   header {
     position: fixed;
     top: 0;
+    z-index: 100 !important;
   }
   /* .btn-secondary {
     display: none !important;
+  
   } */
   .mobile-container {
     height: 80vh;

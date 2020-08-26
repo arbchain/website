@@ -132,8 +132,8 @@ const Resources = () => {
                 </p>
 
                 <a
-                  href='www.google.com'
-                  target='_next'
+                  href='https://github.com/arbchain'
+                  target='_blank'
                   className='mt-3 text-indigo-500 inline-flex items-center cursor-pointer'
                 >
                   Learn More

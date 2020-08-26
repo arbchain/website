@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//import '../css/menu.css';
 
 const NavMenu = ({ closeMenu }) => {
   return (
-    <div>
+    <div className='main-navigation'>
       <ul>
         <li>
           <Link to='/' className='text-blue-500 py-3 '>

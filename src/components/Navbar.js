@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 //import { Link as extLink } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../css/customStyle.css';
+//import '../css/menu.css';
 import logo from '../assets/images/logo.png';
 import NavMenu from './Navmenu';
 import { useTransition, animated } from 'react-spring';
@@ -66,7 +67,13 @@ const Navbar = (pros) => {
               Features
             </Link>
 
-            <a className='mr-5 hover:text-gray-900 cursor-pointer'> Blog</a>
+            <a
+              href='https://medium.com/consensolabs'
+              target='_next'
+              className='mr-5 hover:text-gray-900 cursor-pointer'
+            >
+              Blog
+            </a>
             <Link
               to='./contact'
               className='mr-5 hover:text-gray-900 cursor-pointer'
@@ -94,7 +101,7 @@ const Navbar = (pros) => {
         </div>
       </header>
       {/* mob */}
-      <nav className='mobile-toggle flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden '>
+      <nav className='mobile-toggle flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden z-50'>
         <a href='#' class='p-2 mr-4 inline-flex items-center'>
           <img src={logo} alt='Logo' srcset='' />
         </a>
