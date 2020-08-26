@@ -4,34 +4,39 @@ import { Link } from 'react-router-dom';
 
 const NavMenu = ({ closeMenu }) => {
   return (
-    <div className='main-navigation'>
+    <div className='main-navigation bg-secondary-blue font-body m-10'>
       <ul>
-        <li>
-          <Link to='/' className='text-blue-500 py-3 '>
+        <li className='py-2'>
+          <Link to='/' className='text-white p-6 m-10 '>
             Home
           </Link>
         </li>
-        <li>
-          <Link to='/about' className='text-blue-500 py-3 ' onClick={closeMenu}>
+        <li className='py-2'>
+          <Link
+            to='/about'
+            className='text-white  p-6 m-10'
+            onClick={closeMenu}
+          >
             About
           </Link>
         </li>
-        <li>
+        <li className='py-2'>
           <Link
-            className='text-blue-500 py-3'
+            className='text-white p-6 m-10'
             activeClass='active'
             to='/#why'
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
+            onClick={closeMenu}
           >
             Why
           </Link>
         </li>
-        <li>
+        <li className='py-2'>
           <Link
-            className='text-blue-500 py-3'
+            className='text-white p-6 m-10'
             activeClass='active'
             to='/#architeture'
             spy={true}
@@ -43,9 +48,9 @@ const NavMenu = ({ closeMenu }) => {
             How
           </Link>
         </li>
-        <li>
+        <li className='py-2'>
           <Link
-            className='text-blue-500 py-3'
+            className='text-white p-6 m-10'
             activeClass='active'
             to='/#features'
             spy={true}
@@ -57,10 +62,10 @@ const NavMenu = ({ closeMenu }) => {
             Features
           </Link>
         </li>
-        <li>
+        <li className='py-2'>
           <Link
             to='./contact'
-            className='text-blue-500 py-3'
+            className='text-white p-6 m-10'
             onClick={closeMenu}
           >
             Contact

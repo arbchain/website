@@ -128,8 +128,7 @@ const Navbar = (pros) => {
             item && (
               <animated.div
                 key={key}
-                s
-                tyle={props}
+                // style={props}
                 className='bg-black-t-50 fixed top-0 left-0 w-full h-full z-50'
                 onClick={() => setShowMenu(false)}
               ></animated.div>
@@ -141,13 +140,13 @@ const Navbar = (pros) => {
             item && (
               <animated.div
                 key={key}
-                s
-                tyle={props}
-                className='fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow'
+                // style={props}
+                className='fixed bg-secondary-blue top-0 left-0 w-4/5 h-full z-50 shadow'
               >
-                <span className='font-bold'> Menu</span>
-
-                <NavMenu closeMenu={() => setShowMenu(false)} />
+                <NavMenu
+                  closeMenu={() => setShowMenu(false)}
+                  className='m-10'
+                />
               </animated.div>
             )
         )}
