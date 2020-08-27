@@ -12,7 +12,7 @@ const Teams = () => {
             The real building blocks
           </h1>
         </div>
-        <div className='flex flex-wrap -m-4 items-center object-center'>
+        <div className='flex flex-wrap -m-4 items-center object-center mobile-grid sm:flex mobile-grid'>
           {members.map((emp) => (
             <div className='p-4 lg:w-1/5 md:w-1/2'>
               <div className='h-full w-48 flex flex-col items-center text-center'>

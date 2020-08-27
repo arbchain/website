@@ -44,5 +44,10 @@ header {
   }
   h1 {
     font-size: 1.6em !important;
+    text-align: center;
+  }
+  .mobile-grid {
+    display: flex;
+    flex-direction: column;
   }
 }
