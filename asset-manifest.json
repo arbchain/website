@@ -1,32 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1a96adb.chunk.css",
-    "main.js": "/static/js/main.a3b3ed58.chunk.js",
-    "main.js.map": "/static/js/main.a3b3ed58.chunk.js.map",
+    "main.css": "/static/css/main.a2be1999.chunk.css",
+    "main.js": "/static/js/main.82dd0022.chunk.js",
+    "main.js.map": "/static/js/main.82dd0022.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.29c99ee2.js",
     "runtime-main.js.map": "/static/js/runtime-main.29c99ee2.js.map",
-    "static/js/2.3f9ebe65.chunk.js": "/static/js/2.3f9ebe65.chunk.js",
-    "static/js/2.3f9ebe65.chunk.js.map": "/static/js/2.3f9ebe65.chunk.js.map",
+    "static/js/2.60d4b4af.chunk.js": "/static/js/2.60d4b4af.chunk.js",
+    "static/js/2.60d4b4af.chunk.js.map": "/static/js/2.60d4b4af.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e6bd24930b01542fcf07f312769149af.js": "/precache-manifest.e6bd24930b01542fcf07f312769149af.js",
+    "precache-manifest.74aeebe24f5e05acb17469c93af705eb.js": "/precache-manifest.74aeebe24f5e05acb17469c93af705eb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b1a96adb.chunk.css.map": "/static/css/main.b1a96adb.chunk.css.map",
-    "static/js/2.3f9ebe65.chunk.js.LICENSE.txt": "/static/js/2.3f9ebe65.chunk.js.LICENSE.txt",
+    "static/css/main.a2be1999.chunk.css.map": "/static/css/main.a2be1999.chunk.css.map",
+    "static/js/2.60d4b4af.chunk.js.LICENSE.txt": "/static/js/2.60d4b4af.chunk.js.LICENSE.txt",
     "static/media/ErrorPage404.svg": "/static/media/ErrorPage404.3d5179a8.svg",
+    "static/media/GitFunded.svg": "/static/media/GitFunded.05723973.svg",
     "static/media/Rewards.svg": "/static/media/Rewards.6b1588b6.svg",
     "static/media/about.svg": "/static/media/about.7eab699e.svg",
+    "static/media/arbchain.svg": "/static/media/arbchain.4de58248.svg",
     "static/media/confidential.svg": "/static/media/confidential.ee4311bc.svg",
     "static/media/configurable.svg": "/static/media/configurable.96fb5413.svg",
     "static/media/faqComp.Style.css": "/static/media/down.d1fc0d71.svg",
     "static/media/law.svg": "/static/media/law.7cc44c10.svg",
     "static/media/problem.png": "/static/media/problem.1ad1dfb1.png",
     "static/media/speed.svg": "/static/media/speed.d77f6ca4.svg",
+    "static/media/syndlend.svg": "/static/media/syndlend.578b641f.svg",
     "static/media/working.png": "/static/media/working.53edae9e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.29c99ee2.js",
-    "static/js/2.3f9ebe65.chunk.js",
-    "static/css/main.b1a96adb.chunk.css",
-    "static/js/main.a3b3ed58.chunk.js"
+    "static/js/2.60d4b4af.chunk.js",
+    "static/css/main.a2be1999.chunk.css",
+    "static/js/main.82dd0022.chunk.js"
   ]
 }
