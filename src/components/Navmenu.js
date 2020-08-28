@@ -1,7 +1,6 @@
 import React from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-//import '../css/menu.css';
 
 const NavMenu = ({ closeMenu }) => {
   return (
@@ -26,10 +25,6 @@ const NavMenu = ({ closeMenu }) => {
             className='text-white p-6 m-10'
             activeClass='active'
             href='/#why'
-            // spy={true}
-            // smooth={true}
-            // offset={-70}
-            // duration={500}
             onClick={closeMenu}
           >
             Why
@@ -40,10 +35,6 @@ const NavMenu = ({ closeMenu }) => {
             className='text-white p-6 m-10'
             activeClass='active'
             href='/#architeture'
-            // spy={true}
-            // smooth={true}
-            // offset={-70}
-            // duration={500}
             onClick={closeMenu}
           >
             How
@@ -54,10 +45,6 @@ const NavMenu = ({ closeMenu }) => {
             className='text-white p-6 m-10'
             activeClass='active'
             href='/#features'
-            // spy={true}
-            // smooth={true}
-            // offset={-70}
-            // duration={500}
             onClick={closeMenu}
           >
             Features
