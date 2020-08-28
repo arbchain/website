@@ -7,7 +7,7 @@ const NavMenu = ({ closeMenu }) => {
     <div className='main-navigation bg-secondary-blue font-body m-10'>
       <ul>
         <li className='py-2'>
-          <Link to='/' className='text-white p-6 m-10 '>
+          <Link to='/' className='text-white p-6 m-10 ' onClick={closeMenu}>
             Home
           </Link>
         </li>
@@ -34,7 +34,7 @@ const NavMenu = ({ closeMenu }) => {
           <a
             className='text-white p-6 m-10'
             activeClass='active'
-            href='/#architeture'
+            href='/#architecture'
             onClick={closeMenu}
           >
             How
