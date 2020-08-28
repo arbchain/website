@@ -46,7 +46,7 @@ const Navbar = (pros) => {
             <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#architeture'
+              to='/#architecture'
               spy={true}
               smooth={true}
               offset={-70}
@@ -75,7 +75,7 @@ const Navbar = (pros) => {
               Blog
             </a>
             <Link
-              to='./contact'
+              to='/contact'
               className='mr-5 hover:text-gray-900 cursor-pointer'
             >
               Contact
@@ -101,7 +101,7 @@ const Navbar = (pros) => {
         </div>
       </header>
       {/* mob */}
-      <nav className='mobile-toggle flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden z-50'>
+      <nav className='mobile-toggle flex items-center bg-secondary-blue flex-wrap sm:hidden md:hidden z-50 mobile-nav'>
         <a href='#' class='p-2 mr-4 inline-flex items-center'>
           <img src={logo} alt='Logo' srcset='' />
         </a>

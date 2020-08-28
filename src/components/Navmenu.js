@@ -64,7 +64,7 @@ const NavMenu = ({ closeMenu }) => {
         </li>
         <li className='py-2'>
           <Link
-            to='./contact'
+            to='/contact'
             className='text-white p-6 m-10'
             onClick={closeMenu}
           >

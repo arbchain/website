@@ -50,4 +50,9 @@ header {
     display: flex;
     flex-direction: column;
   }
+
+  .mobile-nav {
+    margin-top: 0;
+    padding: 0.2em;
+  }
 }
