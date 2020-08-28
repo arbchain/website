@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-//import { Link as extLink } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+
+import { Link } from 'react-router-dom';
 import '../css/customStyle.css';
 //import '../css/menu.css';
 import logo from '../assets/images/logo.png';
@@ -32,40 +32,40 @@ const Navbar = (pros) => {
             >
               About
             </Link>
-            <Link
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#why'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              href='/#why'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
             >
               Why
-            </Link>
-            <Link
+            </a>
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#architecture'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              href='/#architecture'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
             >
               How
-            </Link>
-            <Link
+            </a>
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#features'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className='mr-5 hover:text-gray-900 cursor-pointer'
+              href='/#features'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
+              // className='mr-5 hover:text-gray-900 cursor-pointer'
             >
               Features
-            </Link>
+            </a>
 
             <a
               href='https://medium.com/consensolabs'

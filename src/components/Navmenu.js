@@ -1,4 +1,5 @@
 import React from 'react';
+// import { HashLink as Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 //import '../css/menu.css';
 
@@ -21,46 +22,46 @@ const NavMenu = ({ closeMenu }) => {
           </Link>
         </li>
         <li className='py-2'>
-          <Link
+          <a
             className='text-white p-6 m-10'
             activeClass='active'
-            to='/#why'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            href='/#why'
+            // spy={true}
+            // smooth={true}
+            // offset={-70}
+            // duration={500}
             onClick={closeMenu}
           >
             Why
-          </Link>
+          </a>
         </li>
         <li className='py-2'>
-          <Link
+          <a
             className='text-white p-6 m-10'
             activeClass='active'
-            to='/#architeture'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            href='/#architeture'
+            // spy={true}
+            // smooth={true}
+            // offset={-70}
+            // duration={500}
             onClick={closeMenu}
           >
             How
-          </Link>
+          </a>
         </li>
         <li className='py-2'>
-          <Link
+          <a
             className='text-white p-6 m-10'
             activeClass='active'
-            to='/#features'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
+            href='/#features'
+            // spy={true}
+            // smooth={true}
+            // offset={-70}
+            // duration={500}
             onClick={closeMenu}
           >
             Features
-          </Link>
+          </a>
         </li>
         <li className='py-2'>
           <Link
