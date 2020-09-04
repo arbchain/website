@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-//import { Link as extLink } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+
+import { Link } from 'react-router-dom';
 import '../css/customStyle.css';
 //import '../css/menu.css';
 import logo from '../assets/images/logo.png';
@@ -32,40 +32,40 @@ const Navbar = (pros) => {
             >
               About
             </Link>
-            <Link
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#why'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              href='/#why'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
             >
               Why
-            </Link>
-            <Link
+            </a>
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#architeture'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
+              href='/#architecture'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
             >
               How
-            </Link>
-            <Link
+            </a>
+            <a
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              to='/#features'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className='mr-5 hover:text-gray-900 cursor-pointer'
+              href='/#features'
+              // spy={true}
+              // smooth={true}
+              // offset={-70}
+              // duration={500}
+              // className='mr-5 hover:text-gray-900 cursor-pointer'
             >
               Features
-            </Link>
+            </a>
 
             <a
               href='https://medium.com/consensolabs'
@@ -75,7 +75,7 @@ const Navbar = (pros) => {
               Blog
             </a>
             <Link
-              to='./contact'
+              to='/contact'
               className='mr-5 hover:text-gray-900 cursor-pointer'
             >
               Contact
@@ -101,10 +101,10 @@ const Navbar = (pros) => {
         </div>
       </header>
       {/* mob */}
-      <nav className='mobile-toggle flex items-center bg-secondary-blue p-3 flex-wrap sm:hidden md:hidden z-50'>
-        <a href='#' class='p-2 mr-4 inline-flex items-center'>
+      <nav className='mobile-toggle flex items-center bg-secondary-blue flex-wrap sm:hidden md:hidden z-50 mobile-nav'>
+        <Link to='/' class='p-2 mr-4 inline-flex items-center'>
           <img src={logo} alt='Logo' srcset='' />
-        </a>
+        </Link>
 
         <button
           className='text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler'
