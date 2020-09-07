@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 
 import FaqComponent from './faqComponent';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function Faq() {
   const [faqs, setfaqs] = useState([
     {
@@ -53,11 +57,14 @@ function Faq() {
   return (
     <div className='App'>
       <div className='container px-5 py-24 mx-auto'>
-        <h1 className='sm:text-3xl text-2xl font-medium text-center title-font font-body mb-0 text-gray-900'>
+        <h1
+          className='sm:text-3xl text-2xl font-medium text-center title-font font-body mb-0 text-gray-900'
+          data-aos='zoom-in'
+        >
           Frequently asked Questions
         </h1>
 
-        <div className='faqs font-body'>
+        <div className='faqs font-body' data-aos='fade-up'>
           {faqs.map((faq, i) => (
             <FaqComponent faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}

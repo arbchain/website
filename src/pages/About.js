@@ -5,6 +5,9 @@ import Teams from '../components/teams/Teams';
 import Arbchain from '../assets/images/icons/arbchain.svg';
 import GitFunded from '../assets/images/icons/GitFunded.svg';
 import SyndLend from '../assets/images/icons/syndlend.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const About = () => {
   return (
@@ -12,11 +15,14 @@ const About = () => {
       <section className='text-white font-body bg-secondary-blue '>
         <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
           <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
-            <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
+            <h1
+              className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'
+              data-aos='zoom-in'
+            >
               Leader in Blockchain Development and Solutions
               {/* <br className='hidden lg:inline-block'>readymade gluten /></br> */}
             </h1>
-            <p className='mb-8 leading-relaxed'>
+            <p className='mb-8 leading-relaxed' data-aos='zoom-in'>
               We at Consenso Labs, carefully examine and design the use cases,
               and reach out to stakeholders to get early feedback on our minimal
               viable products.We design and implement our products to not only
@@ -29,7 +35,10 @@ const About = () => {
               organization.
             </p>
           </div>
-          <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+          <div
+            className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'
+            data-aos='zoom-in'
+          >
             <img
               className='object-cover object-center rounded'
               alt='hero'
@@ -41,11 +50,14 @@ const About = () => {
 
       <section className='bg-primary text-gray-700 font-body' id='products'>
         <div className='container px-5 py-24 mx-auto'>
-          <h1 className='text-textWhite flex justify-center sm:text-3xl text-2xl font-body font-medium title-font mb-4 py-6 '>
+          <h1
+            className='text-textWhite flex justify-center sm:text-3xl text-2xl font-body font-medium title-font mb-4 py-6 '
+            data-aos='zoom-in'
+          >
             Our blockchain technology solutions
           </h1>
           <div className='flex flex-wrap -m-4'>
-            <div className='p-4 md:w-1/3 '>
+            <div className='p-4 md:w-1/3 ' data-aos='zoom-in'>
               <a href='https://arbchain.consensolabs.com' target='_blank'>
                 <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                   <div className='flex items-center mb-3'>
@@ -81,7 +93,7 @@ const About = () => {
               </a>
             </div>
 
-            <div className='p-4 md:w-1/3'>
+            <div className='p-4 md:w-1/3' data-aos='zoom-in'>
               <a href='https://syndlend.com' target='_blank'>
                 <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                   <div className='flex items-center mb-3 '>
@@ -122,7 +134,7 @@ const About = () => {
               </a>
             </div>
 
-            <div className='p-4 md:w-1/3'>
+            <div className='p-4 md:w-1/3' data-aos='zoom-in'>
               <a href='https://gitfunded.consensolabs.com' target='_blank'>
                 <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                   <div className='flex items-center mb-3'>

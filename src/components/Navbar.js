@@ -1,19 +1,85 @@
 import React, { useState } from 'react';
-
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+// import { Link } from 'react-router-dom';
 import '../css/customStyle.css';
-//import '../css/menu.css';
 import logo from '../assets/images/logo.png';
-import NavMenu from './Navmenu';
+// import NavMenu from './Navmenu';
 import { useTransition, animated } from 'react-spring';
 
 const Navbar = (pros) => {
   const [showMenu, setShowMenu] = useState(false);
-  const transitions = useTransition(showMenu, null, {
-    from: { position: 'absolute', opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
-  });
+  let menu;
+  if (showMenu) {
+    menu = (
+      <div class='w-full block flex-grow lg:flex lg:items-center mb-2 lg:w-auto bg-primary '>
+        <div className='container mx-auto flex px-5  md:flex-row flex-col '>
+          <div class='text-sm lg:flex-grow'>
+            <Link
+              to='/about'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              About
+            </Link>
+            <Link
+              to='/#why'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              Why
+            </Link>
+            <Link
+              to='/#architecture'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              How
+            </Link>
+            <Link
+              to='/#features'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              Features
+            </Link>
+            <a
+              href='https://medium.com/conensolabs'
+              target='_blank'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              Blog
+            </a>
+            <a
+              href='https://angel.co/company/consensolabs/jobs'
+              target='_blank'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              Career
+            </a>
+            <Link
+              to='/contact'
+              className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <>
       <header className='sticky text-gray-700 font-body bg-secondary-blue sm:display-none  mob'>
@@ -32,40 +98,40 @@ const Navbar = (pros) => {
             >
               About
             </Link>
-            <a
+            <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              href='/#why'
-              // spy={true}
-              // smooth={true}
-              // offset={-70}
-              // duration={500}
+              to='/#why'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               Why
-            </a>
-            <a
+            </Link>
+            <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              href='/#architecture'
-              // spy={true}
-              // smooth={true}
-              // offset={-70}
-              // duration={500}
+              to='/#architecture'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               How
-            </a>
-            <a
+            </Link>
+            <Link
               className='mr-5 hover:text-gray-900 cursor-pointer'
               activeClass='active'
-              href='/#features'
-              // spy={true}
-              // smooth={true}
-              // offset={-70}
-              // duration={500}
-              // className='mr-5 hover:text-gray-900 cursor-pointer'
+              to='/#features'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className='mr-5 hover:text-gray-900 cursor-pointer'
             >
               Features
-            </a>
+            </Link>
 
             <a
               href='https://medium.com/consensolabs'
@@ -123,33 +189,7 @@ const Navbar = (pros) => {
             <path d='M4 6h16M4 12h16M4 18h16'></path>
           </svg>
         </button>
-        {transitions.map(
-          ({ item, key, props }) =>
-            item && (
-              <animated.div
-                key={key}
-                // style={props}
-                className='bg-black-t-50 fixed top-0 left-0 w-full h-full z-50'
-                onClick={() => setShowMenu(false)}
-              ></animated.div>
-            )
-        )}
-
-        {transitions.map(
-          ({ item, key, props }) =>
-            item && (
-              <animated.div
-                key={key}
-                // style={props}
-                className='fixed bg-secondary-blue top-0 left-0 w-4/5 h-full z-50 shadow'
-              >
-                <NavMenu
-                  closeMenu={() => setShowMenu(false)}
-                  className='m-10'
-                />
-              </animated.div>
-            )
-        )}
+        {menu}
       </nav>
     </>
   );

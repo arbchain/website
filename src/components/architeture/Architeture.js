@@ -1,6 +1,10 @@
 import React from 'react';
 import working from '../../assets/images/working.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const Architeture = () => {
   return (
     <>
@@ -9,7 +13,10 @@ const Architeture = () => {
         title='architeture'
         id='architecture'
       >
-        <div className='container mx-auto flex px-5 py-20 md:flex-row flex-col items-center'>
+        <div
+          className='container mx-auto flex px-5 py-20 md:flex-row flex-col items-center'
+          data-aos='zoom-in'
+        >
           <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0'>
             <img src={working} alt='Working' />
           </div>
@@ -29,7 +36,10 @@ const Architeture = () => {
           </div>
         </div>
         <div className='container mx-auto flex px-5 py-5 items-center justify-center flex-col'>
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -46,7 +56,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -62,7 +75,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -79,7 +95,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -95,7 +114,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -112,7 +134,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -129,7 +154,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -146,7 +174,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-1 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>
@@ -162,7 +193,10 @@ const Architeture = () => {
             </div>
           </div>
 
-          <div class='flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto'>
+          <div
+            class='flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto'
+            data-aos='fade-left'
+          >
             <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
               <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
             </div>

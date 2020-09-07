@@ -1,6 +1,9 @@
 import React from 'react';
 import TeamMembers from '../../TeamConfig';
 import '../../css/customStyle.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 let members = TeamMembers;
 const Teams = () => {
@@ -8,14 +11,20 @@ const Teams = () => {
     <section className='text-gray-700 body-font bg-gray-200'>
       <div className='container px-5 py-24 mx-auto'>
         <div className='flex flex-col text-center w-full mb-20'>
-          <h1 className='text-2xl font-medium title-font mb-4 text-gray-900'>
+          <h1
+            className='text-2xl font-medium title-font mb-4 text-gray-900'
+            data-aos='zoom-in'
+          >
             The real building blocks
           </h1>
         </div>
         <div className='flex flex-wrap -m-4 items-center object-center mobile-grid sm:flex mobile-grid'>
           {members.map((emp) => (
             <div className='p-4 lg:w-1/5 md:w-1/2'>
-              <div className='h-full w-48 flex flex-col items-center text-center'>
+              <div
+                className='h-full w-48 flex flex-col items-center text-center'
+                data-aos='zoom-in'
+              >
                 <img
                   alt='team'
                   className='flex-shrink-0 rounded-lg h-56 object-cover object-center mb-4'
