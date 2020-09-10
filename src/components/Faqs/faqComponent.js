@@ -12,10 +12,7 @@ function FAQ({ faq, index, toggleFAQ }) {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <div
-        className='faq-question cursor-pointer text-gray-900'
-        data-aos='fade-left'
-      >
+      <div className='faq-question cursor-pointer text-gray-900'>
         {faq.question}
       </div>
       <div className='faq-answer text-gray-600 px-4'>{faq.answer}</div>

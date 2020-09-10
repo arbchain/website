@@ -64,7 +64,7 @@ function Faq() {
           Frequently asked Questions
         </h1>
 
-        <div className='faqs font-body' data-aos='fade-up'>
+        <div className='faqs font-body' data-aos='zoom-in'>
           {faqs.map((faq, i) => (
             <FaqComponent faq={faq} index={i} toggleFAQ={toggleFAQ} />
           ))}

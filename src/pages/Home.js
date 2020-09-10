@@ -15,7 +15,7 @@ const Home = () => {
       <Features />
       <Architeture />
       <Resources />
-      {/* <Faq /> */}
+      <Faq />
       <Footer />
     </>
   );
