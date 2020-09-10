@@ -1,9 +1,9 @@
 import React from 'react';
 import working from '../../assets/images/working.png';
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
 
 const Architeture = () => {
   return (
