@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
-// import { Link } from 'react-router-dom';
 import '../css/customStyle.css';
 import logo from '../assets/images/logo.png';
-// import NavMenu from './Navmenu';
 
 const Navbar = (pros) => {
   const [showMenu, setShowMenu] = useState(false);

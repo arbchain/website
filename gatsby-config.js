@@ -5,15 +5,25 @@ module.exports = {
     author: `@koushithAmin`,
     github: `https://github.com/arbchain`,
     blog: `https://blog.consensolabs.com/`,
-    // product: `https://appseed.us/apps/gatsbyjs`,
-    // docs: `https://docs.appseed.us/apps/gatsbyjs`,
+    twitter: `https://twitter.com/consensolabs`,
+    linkedin: `https://www.linkedin.com/company/consensolabs/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-178594238-2',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
+        name: `Arbchain Official Website`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#ffffff`,
