@@ -7,11 +7,26 @@ import GitFunded from '../assets/images/icons/GitFunded.svg';
 import SyndLend from '../assets/images/icons/syndlend.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from 'react-helmet';
 AOS.init();
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <title>ArbChain | About</title>
+        <meta
+          name='description'
+          content='we at Consenso Labs, carefully examine and design the use cases, and reach out to stakeholders to get early feedback on our minimal viable products.We design and implement our products to not only take it to the MVP stage but also mindfully architect to scale and make it flexible to pilot it universally across multiple targeted institutions. We work on a variety of enterprise and public blockchain platforms, networks, and tools to find the best fit for the customers’ requirements to fulfill the use cases. Talk to us if you have any blockchain service requirements in your organization.'
+        />
+        <meta name='robots' content='index, follow' />
+        <meta
+          name='keywords'
+          content=' blockchain , blockchain technology, blockchain research lab in Bangalore, cryptography, Blockchain company in Bangalore , Product by Consenso Labs'
+        />
+      </Helmet>
       <section className='text-white font-body bg-secondary-blue '>
         <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
           <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
