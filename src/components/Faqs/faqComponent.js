@@ -1,6 +1,10 @@
 import React from 'react';
 import './faqComp.Style.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 function FAQ({ faq, index, toggleFAQ }) {
   return (
     <div

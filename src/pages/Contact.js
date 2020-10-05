@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
-
+import { Helmet } from 'react-helmet';
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -33,6 +33,20 @@ class ContactForm extends React.Component {
     const { status } = this.state;
     return (
       <>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <title>ArbChain | Contact</title>
+          <meta
+            name='description'
+            content='we at Consenso Labs, carefully examine and design the use cases, and reach out to stakeholders to get early feedback on our minimal viable products.We design and implement our products to not only take it to the MVP stage but also mindfully architect to scale and make it flexible to pilot it universally across multiple targeted institutions. We work on a variety of enterprise and public blockchain platforms, networks, and tools to find the best fit for the customers’ requirements to fulfill the use cases. Talk to us if you have any blockchain service requirements in your organization.'
+          />
+          <meta name='robots' content='index, follow' />
+          <meta
+            name='keywords'
+            content=' blockchain , blockchain technology, blockchain research lab in Bangalore, cryptography, Blockchain company in Bangalore , Product by Consenso Labs'
+          />
+        </Helmet>
         <section className='text-gray-700 font-body relative bg-secondary-blue '>
           <div className='container px-5 py-20 mx-auto '>
             <div className='flex flex-col text-center w-full mb-1'>

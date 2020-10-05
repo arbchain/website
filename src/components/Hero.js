@@ -1,6 +1,10 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../css/customStyle.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+
 const Hero = () => {
   return (
     <section className=' font-body bg-secondary-blue md:h-screen lg:h-full mobile-container '>
