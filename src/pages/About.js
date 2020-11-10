@@ -16,7 +16,7 @@ const About = () => {
       <Helmet>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title>ArbChain | About</title>
+        <title>Arbchain | About</title>
         <meta
           name='description'
           content='we at Consenso Labs, carefully examine and design the use cases, and reach out to stakeholders to get early feedback on our minimal viable products.We design and implement our products to not only take it to the MVP stage but also mindfully architect to scale and make it flexible to pilot it universally across multiple targeted institutions. We work on a variety of enterprise and public blockchain platforms, networks, and tools to find the best fit for the customers’ requirements to fulfill the use cases. Talk to us if you have any blockchain service requirements in your organization.'

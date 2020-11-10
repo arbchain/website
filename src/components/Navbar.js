@@ -53,7 +53,7 @@ const Navbar = (pros) => {
               Features
             </Link>
             <a
-              href='https://medium.com/conensolabs'
+              href='https://blog.consensolabs.com'
               target='_blank'
               className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4'
               onClick={() => setShowMenu(!showMenu)}
@@ -134,7 +134,7 @@ const Navbar = (pros) => {
             </Link>
 
             <a
-              href='https://medium.com/consensolabs'
+              href='https://blog.consensolabs.com'
               target='_next'
               className='mr-5 hover:text-gray-900 cursor-pointer'
             >

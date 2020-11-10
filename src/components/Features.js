@@ -4,6 +4,7 @@ import Configurable from '../assets/images/icons/configurable.svg';
 import Law from '../assets/images/icons/law.svg';
 import Speed from '../assets/images/icons/speed.svg';
 import Confidential from '../assets/images/icons/confidential.svg';
+import Payment from '../assets/images/icons/payment.svg';
 
 import '../css/customStyle.css';
 
@@ -134,16 +135,15 @@ function Features() {
               <div className='h-full bg-white shadow-xl border-gray-200  rounded-lg overflow-hidden transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center'
-                  src={Rewards}
+                  src={Payment}
                   alt='blog'
                 />
                 <div className='bg-white p-6'>
                   <h1 className='title-font text-lg font-medium text-gray-900 mb-3 text-center'>
-                    Enforcement of awards and rules
+                    Convenient payment service
                   </h1>
                   <p className='leading-relaxed mb-3 text-center font-light'>
-                    Enforcing the arbitral awards on through smart contract
-                    events
+                    Quicker and precise payment service between the entities
                   </p>
                 </div>
               </div>

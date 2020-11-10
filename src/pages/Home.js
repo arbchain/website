@@ -14,7 +14,7 @@ const Home = () => {
       <Helmet>
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <title>ArbChain</title>
+        <title>Arbchain | DLT based arbitration platform </title>
         <meta
           name='description'
           content='DLT based platform that brings all the benefits of the decentralization to solve inefficiencies in the arbitration by providing authentic, privacy preserved dispute resolution with a self enforceable agreements embedded in the blockchain to automate several arbitration procedures and enforce arbitral awards.'

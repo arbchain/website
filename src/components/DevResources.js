@@ -17,7 +17,7 @@ const Resources = () => {
           </h1>
         </div>
         <div className='flex flex-wrap -m-4'>
-          <div className='p-4 md:w-1/3 ' data-aos='zoom-in'>
+          <a href='https://docs.arbchain.consensolabs.com' target="_blank" className='p-4 md:w-1/3 ' data-aos='zoom-in'>
             <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
               <div className='flex items-center mb-3'>
                 <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0 '>
@@ -41,8 +41,7 @@ const Resources = () => {
               </div>
               <div className='flex-grow'>
                 <p className='leading-relaxed text-base'>
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Documentation of architecture, getting started, roadmap and much more.
                 </p>
                 <a className='mt-3 text-indigo-500 inline-flex items-center'>
                   Learn More
@@ -60,9 +59,9 @@ const Resources = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className='p-4 md:w-1/3' data-aos='zoom-in'>
+          <a className='p-4 md:w-1/3' data-aos='zoom-in'>
             <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
               <div className='flex items-center mb-3 '>
                 <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0'>
@@ -86,8 +85,7 @@ const Resources = () => {
               </div>
               <div className='flex-grow'>
                 <p className='leading-relaxed text-base'>
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Coming soon!.
                 </p>
                 <a className='mt-3 text-indigo-500 inline-flex items-center'>
                   Learn More
@@ -105,9 +103,9 @@ const Resources = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div className='p-4 md:w-1/3' data-aos='zoom-in'>
+          <a a href='https://github.com/arbchain' target="_blank" className='p-4 md:w-1/3' data-aos='zoom-in'>
             <div className='flex rounded-lg h-full bg-gray-100 p-8 flex-col transition duration-500 ease-in-out bg-white hover:bg-white transform hover:-translate-y-1 hover:scale-110'>
               <div className='flex items-center mb-3'>
                 <div className='w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0'>
@@ -131,8 +129,8 @@ const Resources = () => {
               </div>
               <div className='flex-grow'>
                 <p className='leading-relaxed text-base'>
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine.
+                  Access to core libraries and client implementation.
+                  Contact us for a demo.
                 </p>
 
                 <a
@@ -155,7 +153,7 @@ const Resources = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

@@ -104,7 +104,7 @@ const Footer = () => {
       <div className='bg-gray-900'>
         <div className='container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row'>
           <p className='text-white text-sm text-center sm:text-left'>
-            ArbChain © 2020
+            Arbchain © 2020
           </p>
           <span className='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start cursor-pointer'>
             <a
